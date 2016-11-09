@@ -1,0 +1,91 @@
+extends layout
+
+block content
+	h1(id="bigOne") #{title}
+	
+	//- p Welcome to #{title}	
+
+	div.top
+		//- form.form-horizontal(method="post", id="loginForm")
+		//- 	label Username
+		//- 	input.span3(id="username", type="text", name="User", placeholder="Enter your username")
+		//- 	label Password
+		//- 	input.span3(id="password", type="password", name="Password")
+		//- 	input.btn(type="submit", value="Log In")
+	div.container
+		div.content
+			h1 Product2
+			table(id="productTable").table.table-striped
+				thead
+					tr
+						th Image
+						th Name
+						th Category
+						th Rent Price
+						th Location
+						th Description
+				tbody(id="productsRowContainer")
+					//- tr
+					//- 	td Hello
+					//- 	td World
+					//- 	td Test
+					script.
+						var productName = document.getElementById('productName');
+						var productCategory = document.getElementById('productCategory');
+						var productsRef = firebase.database().ref('products')
+						productsRef.orderByChild('productName').once('value', function(snapshot){
+							snapshot.forEach(function(childSnapshot){
+							//Get the product object
+							var product = childSnapshot.val();
+							//Create a new row for each product
+							var productRow = document.createElement("tr");
+
+							//Assign product images to the product row
+							var productNameImages = document.createElement("td");
+							product.images.forEach(function(productImage){
+								var imageElement = document.createElement('img');
+								imageElement.src = productImage;
+								productNameImages.appendChild(imageElement);
+							});
+							productRow.appendChild(productNameImages);
+
+							//Assign product name to the product row
+							var productNameColumn = document.createElement("td");
+							productNameColumn.innerText = product.productName;
+							productRow.appendChild(productNameColumn);
+
+							//Assign product category to the product row
+							var productCategoryColumn = document.createElement("td");
+							productCategoryColumn.innerText = product.category;
+							productRow.appendChild(productCategoryColumn);
+
+							//Assign product rent prices to the product row
+							var productRentPricesColumn = document.createElement("td");
+							product.rentPrices.forEach(function(rentPrice){
+								productRentPricesColumn.innerText += rentPrice.rentPeriod + ": " + rentPrice.cost + '\n';
+							})
+							productRow.appendChild(productRentPricesColumn);
+							
+							//Assign product location to the product row
+							var productLocationColumn = document.createElement("td");
+							productLocationColumn.innerText = product.location;
+							productRow.appendChild(productLocationColumn);
+
+							//Assign product description to the product description
+							var productDescriptionColumn = document.createElement("td");
+							productDescriptionColumn.innerText = product.productDescription;
+							productRow.appendChild(productDescriptionColumn);
+
+							document.getElementById("productsRowContainer").appendChild(productRow);
+								//- console.log(childKey);
+							});
+
+							// When the table finished rendering
+							$('#productTable').DataTable();
+						})
+
+			
+	div.footer
+
+		//- script.
+				

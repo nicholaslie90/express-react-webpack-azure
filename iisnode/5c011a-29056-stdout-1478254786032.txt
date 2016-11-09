@@ -1,0 +1,11 @@
+Express server listening on port \\.\pipe\0afe3f96-1bb2-4279-829f-042c9434fdd2
+[0mGET / [32m200 [0m3264.343 ms - -[0m
+[0mGET / [32m200 [0m2.500 ms - -[0m
+[0mGET / [32m200 [0m5.673 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m100.311 ms - -[0m
+[0mGET / [32m200 [0m1.153 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m1.294 ms - -[0m
+[0mGET / [32m200 [0m1.559 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m0.854 ms - -[0m
+[0mGET / [32m200 [0m1.967 ms - -[0m
+[0mGET / [32m200 [0m2.565 ms - -[0m

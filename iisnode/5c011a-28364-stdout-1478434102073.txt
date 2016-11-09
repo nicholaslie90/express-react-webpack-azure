@@ -1,0 +1,4 @@
+Express server listening on port \\.\pipe\e87c5399-cb23-4758-a800-fe011d836299
+Disabling Azure Drive logging after 43200000ms since it was enabled
+[0mGET / [32m200 [0m6672.637 ms - -[0m
+[0mGET /favicon.ico [33m404 [0m87.104 ms - -[0m

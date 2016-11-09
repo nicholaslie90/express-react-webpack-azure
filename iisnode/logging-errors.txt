@@ -1,0 +1,61 @@
+Fri Nov 04 2016 07:24:00 GMT+0000 (Coordinated Universal Time): Application has thrown an uncaught exception and is terminated:
+TypeError: express.router is not a function
+    at Object.<anonymous> (D:\home\site\wwwroot\app.js:7:22)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\Program Files (x86)\iisnode\interceptor.js:451:1)
+    at Module._compile (module.js:556:32)
+Fri Nov 04 2016 07:25:14 GMT+0000 (Coordinated Universal Time): Application has thrown an uncaught exception and is terminated:
+TypeError: express.router is not a function
+    at Object.<anonymous> (D:\home\site\wwwroot\app.js:7:22)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\Program Files (x86)\iisnode\interceptor.js:451:1)
+    at Module._compile (module.js:556:32)
+Fri Nov 04 2016 07:32:48 GMT+0000 (Coordinated Universal Time): Application has thrown an uncaught exception and is terminated:
+TypeError: express.router is not a function
+    at Object.<anonymous> (D:\home\site\wwwroot\app.js:7:22)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\Program Files (x86)\iisnode\interceptor.js:451:1)
+    at Module._compile (module.js:556:32)
+Fri Nov 04 2016 07:38:21 GMT+0000 (Coordinated Universal Time): Application has thrown an uncaught exception and is terminated:
+TypeError: express.router is not a function
+    at Object.<anonymous> (D:\home\site\wwwroot\app.js:7:22)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\Program Files (x86)\iisnode\interceptor.js:451:1)
+    at Module._compile (module.js:556:32)
+Sun Nov 06 2016 12:08:22 GMT+0000 (Coordinated Universal Time): Disabling Azure Drive logging after 43200000ms since it was enabled
+Mon Nov 07 2016 06:17:55 GMT+0000 (Coordinated Universal Time): Application has thrown an uncaught exception and is terminated:
+Error: Cannot find module './config/express'
+    at Function.Module._resolveFilename (module.js:455:15)
+    at Function.Module._load (module.js:403:25)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (D:\home\site\wwwroot\app.js:27:18)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)

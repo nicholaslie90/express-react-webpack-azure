@@ -1,0 +1,45 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width')
+    title= title
+    block css
+      link(rel='stylesheet', href='/bootstrap/css/bootstrap.min.css')
+      link(rel='stylesheet', href='/bootstrap/css/bootstrap-responsive.min.css')
+      link(rel='stylesheet', href='https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css')
+      link(rel='stylesheet', href='/css/style.css')
+      
+    block js
+      //- Bootstrap stuff
+      script(src='/bootstrap/js/bootstrap.min.js')
+
+      //- Firebase stuff
+      script(src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js")
+      script.
+        var config = {
+          apiKey: "AIzaSyD-Ep_EI3agkAQF2ae0ts3HaBY7memNrVU",
+          authDomain: "project-4007065889670638382.firebaseapp.com",
+          databaseURL: "https://project-4007065889670638382.firebaseio.com",
+          storageBucket: "project-4007065889670638382.appspot.com",
+          messagingSenderId: "561387829561"
+        };
+      script.
+        firebase.initializeApp(config);
+
+      //- jQuery stuff
+      script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+
+      script(src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js")
+      if ENV_DEVELOPMENT
+        script(src='http://localhost:35729/livereload.js')
+  body
+    block content
+
+  footer
+    block css
+      //- DataTables stuff
+      
+    block js
+      //- DataTables stuff
+      
