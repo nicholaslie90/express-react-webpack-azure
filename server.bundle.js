@@ -65,17 +65,17 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	// we'll use this to render our app to an html string
-	var express = __webpack_require__(20),
-	    config = __webpack_require__(21);
+	var express = __webpack_require__(19),
+	    config = __webpack_require__(20);
 	// and these to match the url to routes and then render
 	// ...
 	// import some new stuff
 
 
-	var firebase = __webpack_require__(23);
-	var path = __webpack_require__(22);
+	var firebase = __webpack_require__(22);
+	var path = __webpack_require__(21);
 
-	var compression = __webpack_require__(24);
+	var compression = __webpack_require__(23);
 	var app = express();
 
 	//Enable compression
@@ -137,9 +137,9 @@
 	  console.log('Express server listening on port ' + config.port);
 	});
 
-	module.exports = __webpack_require__(25)(app, config);
+	module.exports = __webpack_require__(24)(app, config);
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/server.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/server.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/server.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/server.js"); } } })();
 	/* WEBPACK VAR INJECTION */}.call(exports, ""))
 
 /***/ },
@@ -182,19 +182,19 @@
 
 	var _app2 = _interopRequireDefault(_app);
 
-	var _About = __webpack_require__(17);
+	var _About = __webpack_require__(16);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Repos = __webpack_require__(18);
+	var _Repos = __webpack_require__(17);
 
 	var _Repos2 = _interopRequireDefault(_Repos);
 
-	var _Repo = __webpack_require__(19);
+	var _Repo = __webpack_require__(18);
 
 	var _Repo2 = _interopRequireDefault(_Repo);
 
-	var _Home = __webpack_require__(16);
+	var _Home = __webpack_require__(15);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -212,7 +212,7 @@
 	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
 	); // routes.js
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/config/routes.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/config/routes.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/config/routes.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/config/routes.js"); } } })();
 
 /***/ },
 /* 6 */
@@ -226,13 +226,11 @@
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-	__webpack_require__(7);
-
-	var _index = __webpack_require__(11);
+	var _index = __webpack_require__(7);
 
 	var _index2 = _interopRequireDefault(_index);
 
-	var _navlink = __webpack_require__(13);
+	var _navlink = __webpack_require__(11);
 
 	var _navlink2 = _interopRequireDefault(_navlink);
 
@@ -242,11 +240,15 @@
 
 	var _reactRouter = __webpack_require__(3);
 
-	var _NavLink = __webpack_require__(15);
+	var _Navigation = __webpack_require__(13);
+
+	var _Navigation2 = _interopRequireDefault(_Navigation);
+
+	var _NavLink = __webpack_require__(14);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
-	var _Home = __webpack_require__(16);
+	var _Home = __webpack_require__(15);
 
 	var _Home2 = _interopRequireDefault(_Home);
 
@@ -273,69 +275,74 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        this.props.children || _react2.default.createElement(_Home2.default, null),
+	        _react2.default.createElement(_Navigation2.default, null),
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'It Works!'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'This React project just works including ',
+	          'div',
+	          { className: 'container' },
+	          this.props.children || _react2.default.createElement(_Home2.default, null),
 	          _react2.default.createElement(
-	            'span',
-	            { className: _index2.default.blueBg },
-	            'module'
+	            'h1',
+	            null,
+	            'It Works!'
 	          ),
-	          ' local styles.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Global bootstrap css import works too as you can see on the following button.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'btn btn-primary btn-lg' },
-	            'Enjoy!'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { role: 'nav' },
+	            'p',
+	            null,
+	            'This React project just works including ',
+	            _react2.default.createElement(
+	              'span',
+	              { className: _index2.default.blueBg },
+	              'module'
+	            ),
+	            ' local styles.'
+	          ),
 	          _react2.default.createElement(
-	            'li',
+	            'p',
+	            null,
+	            'Global bootstrap css import works too as you can see on the following button.'
+	          ),
+	          _react2.default.createElement(
+	            'p',
 	            null,
 	            _react2.default.createElement(
-	              _reactRouter.IndexLink,
-	              { to: '/', activeClassName: _navlink2.default.navlinkActive },
-	              'Home'
+	              'a',
+	              { className: 'btn btn-primary btn-lg' },
+	              'Enjoy!'
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'li',
-	            null,
+	            'ul',
+	            { role: 'nav' },
 	            _react2.default.createElement(
-	              _NavLink2.default,
-	              { to: '/about' },
-	              'About'
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _reactRouter.IndexLink,
+	                { to: '/', activeClassName: _navlink2.default.navlinkActive },
+	                'Home'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/about' },
+	                'About'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                _NavLink2.default,
+	                { to: '/repos' },
+	                'Repos'
+	              )
 	            )
 	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _NavLink2.default,
-	              { to: '/repos' },
-	              'Repos'
-	            )
-	          )
-	        ),
-	        this.props.children
+	          this.props.children
+	        )
 	      );
 	    }
 	  }]);
@@ -345,13 +352,14 @@
 
 	exports.default = App;
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/app.jsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/app.jsx"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/app.jsx"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/app.jsx"); } } })();
 
 /***/ },
 /* 7 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
+	module.exports = {"blueBg":"index__blueBg___2aHe3","navlinkActive":"index__navlinkActive___1yJgB"};
 
 /***/ },
 /* 8 */,
@@ -361,19 +369,234 @@
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"blueBg":"index__blueBg___2aHe3","navlinkActive":"index__navlinkActive___1yJgB"};
+	module.exports = {"navlinkActive":"_navlink__navlinkActive___15OQd"};
 
 /***/ },
 /* 12 */,
 /* 13 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	// removed by extract-text-webpack-plugin
-	module.exports = {"navlinkActive":"_navlink__navlinkActive___15OQd"};
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	// import { Dropdown } from 'react-bootstrap';
+	// import NavItem from '../../components/widgets/NavItem';
+	// import Profile from './Profile';
+
+	var Navigation = function (_Component) {
+	    _inherits(Navigation, _Component);
+
+	    function Navigation() {
+	        _classCallCheck(this, Navigation);
+
+	        return _possibleConstructorReturn(this, (Navigation.__proto__ || Object.getPrototypeOf(Navigation)).apply(this, arguments));
+	    }
+
+	    _createClass(Navigation, [{
+	        key: "componentDidMount",
+	        value: function componentDidMount() {
+	            // const { menu } = this.refs;
+	            // $(menu).metisMenu();
+	        }
+	    }, {
+	        key: "render",
+	        value: function render() {
+	            return _react2.default.createElement(
+	                "nav",
+	                { className: "navbar navbar-default navbar-fixed-top", role: "navigation" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "navbar-header" },
+	                        _react2.default.createElement(
+	                            "button",
+	                            { type: "button", className: "navbar-toggle collapsed", "data-toggle": "collapse", "data-target": "#navbar", "aria-expanded": "false", "aria-controls": "navbar" },
+	                            _react2.default.createElement(
+	                                "span",
+	                                { className: "sr-only" },
+	                                "Toggle navigation"
+	                            ),
+	                            _react2.default.createElement("span", { className: "icon-bar" }),
+	                            _react2.default.createElement("span", { className: "icon-bar" }),
+	                            _react2.default.createElement("span", { className: "icon-bar" })
+	                        ),
+	                        _react2.default.createElement(
+	                            "a",
+	                            { className: "navbar-brand", href: "#" },
+	                            "Project name"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { id: "navbar", className: "navbar-collapse collapse" },
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "nav navbar-nav" },
+	                            _react2.default.createElement(
+	                                "li",
+	                                { className: "active" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#" },
+	                                    "Home"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#about" },
+	                                    "About"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#contact" },
+	                                    "Contact"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                { className: "dropdown" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "#", className: "dropdown-toggle", "data-toggle": "dropdown", role: "button", "aria-haspopup": "true", "aria-expanded": "false" },
+	                                    "Dropdown ",
+	                                    _react2.default.createElement("span", { className: "caret" })
+	                                ),
+	                                _react2.default.createElement(
+	                                    "ul",
+	                                    { className: "dropdown-menu" },
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "Action"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "Another action"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "Something else here"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement("li", { role: "separator", className: "divider" }),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        { className: "dropdown-header" },
+	                                        "Nav header"
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "Separated link"
+	                                        )
+	                                    ),
+	                                    _react2.default.createElement(
+	                                        "li",
+	                                        null,
+	                                        _react2.default.createElement(
+	                                            "a",
+	                                            { href: "#" },
+	                                            "One more separated link"
+	                                        )
+	                                    )
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "ul",
+	                            { className: "nav navbar-nav navbar-right" },
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "../navbar/" },
+	                                    "Default"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                null,
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "../navbar-static-top/" },
+	                                    "Static top"
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                "li",
+	                                { className: "active" },
+	                                _react2.default.createElement(
+	                                    "a",
+	                                    { href: "./" },
+	                                    "Fixed top ",
+	                                    _react2.default.createElement(
+	                                        "span",
+	                                        { className: "sr-only" },
+	                                        "(current)"
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return Navigation;
+	}(_react.Component);
+
+	;
+
+	exports.default = Navigation;
+
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Navigation.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Navigation.js"); } } })();
 
 /***/ },
-/* 14 */,
-/* 15 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -390,7 +613,7 @@
 
 	var _reactRouter = __webpack_require__(3);
 
-	var _navlink = __webpack_require__(13);
+	var _navlink = __webpack_require__(11);
 
 	var _navlink2 = _interopRequireDefault(_navlink);
 
@@ -403,10 +626,10 @@
 	  }
 	});
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/NavLink.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/NavLink.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/NavLink.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/NavLink.js"); } } })();
 
 /***/ },
-/* 16 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -432,10 +655,10 @@
 	  }
 	}); // modules/Home.js
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Home.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Home.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Home.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Home.js"); } } })();
 
 /***/ },
-/* 17 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -461,10 +684,10 @@
 	  }
 	}); // modules/About.js
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/About.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/About.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/About.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/About.js"); } } })();
 
 /***/ },
-/* 18 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -479,7 +702,7 @@
 
 	var _reactRouter = __webpack_require__(3);
 
-	var _NavLink = __webpack_require__(15);
+	var _NavLink = __webpack_require__(14);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
@@ -553,10 +776,10 @@
 	  }
 	});
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Repos.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Repos.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Repos.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Repos.js"); } } })();
 
 /***/ },
-/* 19 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -586,21 +809,21 @@
 	  }
 	}); // modules/Repo.js
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Repo.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/src/components/Repo.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Repo.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/src/components/Repo.js"); } } })();
 
 /***/ },
-/* 20 */
+/* 19 */
 /***/ function(module, exports) {
 
 	module.exports = require("express");
 
 /***/ },
-/* 21 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(__dirname) {'use strict';
 
-	var path = __webpack_require__(22),
+	var path = __webpack_require__(21),
 	    rootPath = path.normalize(__dirname + '/..'),
 	    env = process.env.NODE_ENV || 'development';
 
@@ -608,7 +831,7 @@
 	  development: {
 	    root: rootPath,
 	    app: {
-	      name: 'sevva-backend'
+	      name: 'sevva-web'
 	    },
 	    port: process.env.PORT || 3000
 	  },
@@ -616,7 +839,7 @@
 	  test: {
 	    root: rootPath,
 	    app: {
-	      name: 'sevva-backend'
+	      name: 'sevva-web'
 	    },
 	    port: process.env.PORT || 3000
 	  },
@@ -624,7 +847,7 @@
 	  production: {
 	    root: rootPath,
 	    app: {
-	      name: 'sevva-backend'
+	      name: 'sevva-web'
 	    },
 	    port: process.env.PORT || 3000
 	  }
@@ -632,42 +855,42 @@
 
 	module.exports = config[env];
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/config/config.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/config/config.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/config/config.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/config/config.js"); } } })();
 	/* WEBPACK VAR INJECTION */}.call(exports, "config"))
 
 /***/ },
-/* 22 */
+/* 21 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 23 */
+/* 22 */
 /***/ function(module, exports) {
 
 	module.exports = require("firebase");
 
 /***/ },
-/* 24 */
+/* 23 */
 /***/ function(module, exports) {
 
 	module.exports = require("compression");
 
 /***/ },
-/* 25 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var express = __webpack_require__(20);
-	var glob = __webpack_require__(26);
+	var express = __webpack_require__(19);
+	var glob = __webpack_require__(25);
 
-	var favicon = __webpack_require__(27);
-	var logger = __webpack_require__(28);
-	var cookieParser = __webpack_require__(29);
-	var bodyParser = __webpack_require__(30);
-	var compress = __webpack_require__(24);
-	var methodOverride = __webpack_require__(31);
+	var favicon = __webpack_require__(26);
+	var logger = __webpack_require__(27);
+	var cookieParser = __webpack_require__(28);
+	var bodyParser = __webpack_require__(29);
+	var compress = __webpack_require__(23);
+	var methodOverride = __webpack_require__(30);
 
 	module.exports = function (app, config) {
 	  var env = process.env.NODE_ENV || 'development';
@@ -690,7 +913,7 @@
 
 	  var controllers = glob.sync(config.root + '/app/controllers/*.js');
 	  controllers.forEach(function (controller) {
-	    __webpack_require__(32)(controller)(app);
+	    __webpack_require__(31)(controller)(app);
 	  });
 
 	  app.use(function (req, res, next) {
@@ -722,53 +945,53 @@
 	  return app;
 	};
 
-	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-backend/config/express.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-backend/config/express.js"); } } })();
+	 ;(function register() { /* react-hot-loader/webpack */ if (process.env.NODE_ENV !== 'production') { if (typeof __REACT_HOT_LOADER__ === 'undefined') { return; } if (typeof module.exports === 'function') { __REACT_HOT_LOADER__.register(module.exports, 'module.exports', "/Users/nicholaslie/Documents/Sevva/sevva-web/config/express.js"); return; } for (var key in module.exports) { if (!Object.prototype.hasOwnProperty.call(module.exports, key)) { continue; } var namedExport = void 0; try { namedExport = module.exports[key]; } catch (err) { continue; } __REACT_HOT_LOADER__.register(namedExport, key, "/Users/nicholaslie/Documents/Sevva/sevva-web/config/express.js"); } } })();
 
 /***/ },
-/* 26 */
+/* 25 */
 /***/ function(module, exports) {
 
 	module.exports = require("glob");
 
 /***/ },
-/* 27 */
+/* 26 */
 /***/ function(module, exports) {
 
 	module.exports = require("serve-favicon");
 
 /***/ },
-/* 28 */
+/* 27 */
 /***/ function(module, exports) {
 
 	module.exports = require("morgan");
 
 /***/ },
-/* 29 */
+/* 28 */
 /***/ function(module, exports) {
 
 	module.exports = require("cookie-parser");
 
 /***/ },
-/* 30 */
+/* 29 */
 /***/ function(module, exports) {
 
 	module.exports = require("body-parser");
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports) {
 
 	module.exports = require("method-override");
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var map = {
-		"./config": 21,
-		"./config.js": 21,
-		"./express": 25,
-		"./express.js": 25
+		"./config": 20,
+		"./config.js": 20,
+		"./express": 24,
+		"./express.js": 24
 	};
 	function webpackContext(req) {
 		return __webpack_require__(webpackContextResolve(req));
@@ -781,7 +1004,7 @@
 	};
 	webpackContext.resolve = webpackContextResolve;
 	module.exports = webpackContext;
-	webpackContext.id = 32;
+	webpackContext.id = 31;
 
 
 /***/ }
